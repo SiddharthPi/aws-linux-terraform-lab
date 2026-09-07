@@ -30,3 +30,13 @@ Useful commands:
 systemctl status nginx
 ss -tulpn
 curl localhost
+## Troubleshooting Process
+
+When a website is inaccessible, I check the issue layer by layer:
+
+1. Is the EC2 instance running?
+2. Is Nginx running?
+3. Is port 80 listening?
+4. Does the Security Group allow HTTP?
+5. Does the instance have a public IP?
+6. Does the subnet route to an Internet Gateway?
