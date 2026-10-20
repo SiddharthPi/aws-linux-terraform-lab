@@ -1,4 +1,4 @@
-WS Linux & Terraform Lab
+AWS Linux & Terraform Lab
 
 Hands-on infrastructure lab documenting my transition from
 Linux/Web Hosting L3 Support toward Cloud/DevOps engineering.
