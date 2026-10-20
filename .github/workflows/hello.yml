@@ -1,0 +1,24 @@
+name: My First CI Pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show repository information
+        run: |
+          echo "My first CI pipeline is running"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Branch: $GITHUB_REF_NAME"
+
+      - name: Check Linux commands
+        run: |
+          pwd
+          ls -la
