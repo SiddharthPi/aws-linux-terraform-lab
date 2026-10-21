@@ -22,3 +22,8 @@ jobs:
         run: |
           pwd
           ls -la
+
+      - name: Verify CI failure detection
+        run: |
+          echo "Testing exit codes"
+          test -f README.md
