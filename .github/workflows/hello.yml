@@ -23,6 +23,11 @@ jobs:
           pwd
           ls -la
 
+
+      - name: Verify required project files
+        run: |
+          test -f README.md
+          echo "Required project file exists"
       - name: Verify CI failure detection
         run: |
           echo "Testing exit codes"
