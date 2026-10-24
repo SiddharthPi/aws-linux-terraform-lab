@@ -18,6 +18,10 @@ jobs:
       - name: Check Terraform version
         run: terraform version
 
+      - name: Check Terraform formatting
+        working-directory: terraform
+        run: terraform fmt -check -recursive
+
       - name: Show repository information
         run: |
           echo "My first CI pipeline is running"
