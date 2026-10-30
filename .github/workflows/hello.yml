@@ -53,3 +53,6 @@ jobs:
         run: |
           echo "Testing exit codes"
           test -f README.md
+
+      - name: Test CI failure
+        run: exit 1
